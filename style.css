@@ -5,7 +5,11 @@
 }
 
 body {
-  background-color: lightyellow;
+  background-color: #e7ebf0;
+}
+
+body,
+textarea {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -28,7 +32,19 @@ header {
 section {
   width: 100%;
   height: calc(100% - 48px);
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+}
+
+section .left {
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+section .left,
+section .right,
+.searchbar.active,
+.searchbar.active input,
+.searchbox {
+  background-color: #fff;
 }
 
 .chat-info {
@@ -36,13 +52,12 @@ section {
   line-height: 48px;
   font-size: 13px;
   padding-left: 15px;
-  float: left;
 }
 
 .chat-info:hover,
 .header-search:hover,
 .header-more:hover,
-.left:hover {
+header .left:hover {
   background-color: #497799;
 }
 
@@ -57,19 +72,94 @@ section {
 .chatspace {
   width: 100%;
   height: calc(100% - 128px);
-  background-color: cornsilk;
+}
+
+.chatspace .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.right-container {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .compose-area {
   width: 100%;
   height: 128px;
-  background-color: darkolivegreen;
+  padding-top: 20px;
+}
+
+.compose-area .right-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.compose-area-middle {
+  flex-grow: 2;
+  margin: 0 10px;
+}
+
+.compose-area-picture-own img,
+.compose-area-picture-incoming img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.compose-send {
+  text-transform: uppercase;
+}
+
+.contact {
+  padding: 7px 16px;
+}
+
+.contact:hover {
+  background-color: #f2f6fa;
+}
+
+.contact-info-left,
+.contact-info-right {
+  margin-top: 5px;
+}
+
+.contact-info-right {
+  min-width: 48px;
+}
+
+.contact-name {
+  font-weight: 600;
+}
+
+.contact-picture {
+  margin-right: 10px;
+}
+
+.contact-picture img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.contact-unread {
+  text-align: center;
+  background-color: purple;
+  border-radius: 10px;
 }
 
 .contacts {
   width: 100%;
   height: calc(100% - 58px);
-  background-color: darkcyan;
 }
 
 .dropdown-menu,
@@ -78,7 +168,6 @@ section {
   width: 48px;
   height: 100%;
   text-align: center;
-  float: left;
 }
 
 .dropdown-menu {
@@ -92,29 +181,146 @@ section {
   padding-top: 15px;
 }
 
+.float-lx {
+  float: left;
+}
+
+.float-rx {
+  float: right;
+}
+
 .left {
   height: 100%;
-  width: 30%;
-  /* background-color: green; */
-  float: left;
+  width: 32%;
+}
+
+.message {
+  width: calc(100% - 62px);
+}
+
+.message-bundle {
+  width: 100%;
+  margin: 5px 0;
+  /* background-color: darkolivegreen; */
+  position: relative;
+}
+
+.message-content {
+  width: 90%;
+  margin: 5px 0;
+}
+
+.message-picture {
+  padding: 0 10px;
+}
+
+.message-picture img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.message-select {
+  width: 26px;
+  height: 26px;
+  background-color: cornflowerblue;
+  position: absolute;
+  top: 7px;
+  left: -40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.message-select i {
+  color: #fff;
+  line-height: 26px;
+}
+
+.message-sender {
+  color: #3a6d99;
+  font-size: 600;
+}
+
+.message-template {
+  display: none;
 }
 
 .right {
   height: 100%;
-  width: 70%;
+  width: 68%;
   /* background-color: blue; */
-  float: right;
+}
+
+.searchbar {
+  width: 90%;
+  height: 34px;
+  margin: auto;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchbar,
+.searchbar input {
+  background-color: #f2f2f2;
+}
+
+.searchbar i:first-child {
+  padding-left: 3px;
+}
+
+.searchbar i:last-child {
+  padding-right: 3px;
+  visibility: hidden;
+}
+
+.searchbar input {
+  width: 80%;
+  border: none;
+}
+
+.searchbar.active {
+  border: 1px solid #000;
 }
 
 .searchbox {
   width: 100%;
   height: 58px;
-  background-color: chocolate;
+  padding-top: 12px;
+}
+
+.typebox {
+  margin-bottom: 15px;
+}
+
+.typebox textarea {
+  width: 90%;
+  height: 40px;
+  border: none;
+}
+
+.typebox-options {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid green;
+}
+
+.typebox i,
+.typebox-options i {
+  font-size: 20px;
+  color: #b5b5b5;
+}
+
+.typebox-options img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 #container {
   height: 96vh;
   width: 65%;
   margin: auto;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
