@@ -11,48 +11,212 @@
   </head>
   <body>
     <main id="container">
+      <!-- HEADER -->
       <header>
-        <div class="left">
-          <div class="dropdown-menu">
+        <!-- HEADER LEFT -->
+        <div class="left float-lx">
+          <div class="dropdown-menu float-lx">
             <i class="fas fa-bars"></i>
           </div>
           <div class="brand">
             <h1>Telegram</h1>
           </div>
         </div>
-        <div class="right">
-          <div class="chat-info">
-            <span class="chat-info-contact">Ori</span>
+        <!-- HEADER RIGHT -->
+        <div class="right float-rx">
+          <div class="chat-info float-lx">
+            <span class="chat-info-contact">A-Yuan</span>
             <span class="chat-info-last-seen">Last seen at
               <span class="chat-info-last-seen-time">23:45</span>
             </span>
           </div>
-          <div class="header-search">
+          <div class="header-search float-lx">
             <i class="fas fa-search"></i>
           </div>
-          <div class="header-more">
+          <div class="header-more float-lx">
             <i class="fas fa-ellipsis-v"></i>
           </div>
         </div>
       </header>
-      <section>
-        <div class="left">
-          <div class="searchbox">
 
+      <!-- MAIN SECTION -->
+      <section>
+        <!-- LEFT PANE -->
+        <div class="left float-lx">
+          <div class="searchbox">
+            <div class="searchbar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search">
+              <i class="fas fa-times"></i>
+            </div>
           </div>
           <div class="contacts">
-
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/lsz002.png" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">A-Yuan</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+                <div class="contact-unread">
+                  5
+                </div>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/lhk01.png" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Zewu Jun</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/wyb001.png" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">&gt;&colon;-&vert;</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix" data-contact="ducklings">
+              <div class="contact-picture float-lx">
+                <img src="pics/ducklings.png" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Ducklings</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/jl001.png" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Jun-guinang</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/jc.jpg" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Purple Bat</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/ljy.jpg" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Little me</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
+            <div class="contact clearfix">
+              <div class="contact-picture float-lx">
+                <img src="pics/wq001.jpg" alt="">
+              </div>
+              <div class="contact-info-left float-lx">
+                <p class="contact-name">Doc</p>
+                <small class="contact-preview">somethingsomething</small>
+              </div>
+              <div class="contact-info-right float-rx">
+                <small class="contact-time">12:54</small>
+              </div>
+            </div>
           </div>
+
         </div>
-        <div class="right">
-          <div class="chatspace">
-
+        <!-- RIGHT PANE -->
+        <div class="right float-rx">
+          <div class="chatspace" data-contact="ducklings">
+            <div class="message-bundle clearfix">
+              <div class="message-select">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="message-picture float-lx">
+                <img src="pics/wwx.png" alt="">
+              </div>
+              <div class="message float-lx">
+                <div class="message-left">
+                  <span class="message-time float-rx">23:51</span>
+                  <div class="message-sender float-lx">Wifi</div>
+                  <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+            </div>
+            <div class="message-bundle clearfix">
+              <div class="message-select">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="message-picture float-lx">
+                <img src="pics/wwx.png" alt="">
+              </div>
+              <div class="message float-lx">
+                <div class="message-left">
+                  <span class="message-time float-rx">23:51</span>
+                  <div class="message-sender float-lx">Wifi</div>
+                  <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- INPUT AREA -->
           <div class="compose-area">
 
           </div>
         </div>
       </section>
     </main>
+
+    <!-- TEMPLATE -->
+
+    <div class="message-template">
+      <div class="message-bundle clearfix">
+        <div class="message-select">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="message-picture float-lx">
+          <img src="pics/wwx.png" alt="">
+        </div>
+        <div class="message float-lx">
+          <div class="message-left">
+            <span class="message-time float-rx"></span>
+            <div class="message-sender float-lx"></div>
+            <div class="message-content float-lx"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
