@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js" charset="utf-8"></script>
+    <!-- <script src="help01.js" charset="utf-8"></script> -->
   </head>
   <body>
     <main id="container">
@@ -25,9 +26,9 @@
         <!-- HEADER RIGHT -->
         <div class="right float-rx">
           <div class="chat-info float-lx">
-            <span class="chat-info-contact">A-Yuan</span>
+            <span class="chat-info-contact">Ducklings</span>
             <span class="chat-info-last-seen">Last seen at
-              <span class="chat-info-last-seen-time">23:45</span>
+              <span class="chat-info-last-seen-time">22:22</span>
             </span>
           </div>
           <div class="header-search float-lx">
@@ -51,13 +52,13 @@
             </div>
           </div>
           <div class="contacts">
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="lsz">
               <div class="contact-picture float-lx">
                 <img src="pics/lsz002.png" alt="">
               </div>
               <div class="contact-info-left float-lx">
                 <p class="contact-name">A-Yuan</p>
-                <small class="contact-preview">somethingsomething</small>
+                <p class="contact-preview">something something something something</p>
               </div>
               <div class="contact-info-right float-rx">
                 <small class="contact-time">12:54</small>
@@ -66,7 +67,7 @@
                 </div>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="lxc">
               <div class="contact-picture float-lx">
                 <img src="pics/lhk01.png" alt="">
               </div>
@@ -78,7 +79,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="lwj">
               <div class="contact-picture float-lx">
                 <img src="pics/wyb001.png" alt="">
               </div>
@@ -90,7 +91,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix" data-contact="ducklings">
+            <div class="contact clearfix active" data-contact="ducklings">
               <div class="contact-picture float-lx">
                 <img src="pics/ducklings.png" alt="">
               </div>
@@ -102,7 +103,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="jl">
               <div class="contact-picture float-lx">
                 <img src="pics/jl001.png" alt="">
               </div>
@@ -114,7 +115,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="jc">
               <div class="contact-picture float-lx">
                 <img src="pics/jc.jpg" alt="">
               </div>
@@ -126,7 +127,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="ljy">
               <div class="contact-picture float-lx">
                 <img src="pics/ljy.jpg" alt="">
               </div>
@@ -138,7 +139,7 @@
                 <small class="contact-time">12:54</small>
               </div>
             </div>
-            <div class="contact clearfix">
+            <div class="contact clearfix" data-contact="wq">
               <div class="contact-picture float-lx">
                 <img src="pics/wq001.jpg" alt="">
               </div>
@@ -155,21 +156,212 @@
         </div>
         <!-- RIGHT PANE -->
         <div class="right float-rx">
-          <div class="chatspace" data-contact="ducklings">
+          <div class="chatspace active" data-contact="ducklings">
             <div class="right-container">
               <div class="message-bundle clearfix">
-                <div class="message-select">
-                  <i class="fas fa-check"></i>
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
                 </div>
+                <div class="message msg-incoming float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Wifi</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </span>
+                    </div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message msg-incoming float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Cha Cha</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="chatspace" data-contact="lsz">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
                 <div class="message-picture float-lx">
                   <img src="pics/wwx.png" alt="">
                 </div>
                 <div class="message float-lx">
                   <div class="message-left">
-                    <span class="message-time float-rx">23:51</span>
-                    <div class="message-sender float-lx">Wifi</div>
-                    <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div class="message-content float-lx">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">A-Yuan</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        LSZ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="lxc">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Xichen</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        LXC
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="lwj">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Wangji</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        LWJ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="jl">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Jin rulan</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        JL
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="jc">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Jiang Cheng</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        JC
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="wq">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Wen Qing</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        WQ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chatspace" data-contact="ljy">
+            <div class="right-container">
+              <div class="message-bundle clearfix">
+                <div class="message-picture float-lx">
+                  <img src="pics/wwx.png" alt="">
+                </div>
+                <div class="message float-lx">
+                  <div class="message-left">
+                    <small class="message-time float-rx">23:51</small>
+                    <div class="message-sender float-lx">Jingyi</div>
+                    <div class="message-content float-lx">
+                      <div class="message-select">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <span>
+                        LJY
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -206,25 +398,28 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
     </main>
 
     <!-- TEMPLATE -->
 
-    <div class="message-template">
+    <div id="template">
       <div class="message-bundle clearfix">
-        <div class="message-select">
-          <i class="fas fa-check"></i>
-        </div>
         <div class="message-picture float-lx">
-          <img src="" alt="">
+          <img src="pics/wwx.png" alt="">
         </div>
-        <div class="message float-lx">
+        <div class="message msg-own float-lx">
           <div class="message-left">
-            <span class="message-time float-rx"></span>
-            <div class="message-sender float-lx"></div>
-            <div class="message-content float-lx"></div>
+            <small class="message-time float-rx">12:12</small>
+            <div class="message-sender float-lx">someone</div>
+            <div class="message-content float-lx">
+              <div class="message-select">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>
+                lorem
+              </span>
+            </div>
           </div>
         </div>
       </div>

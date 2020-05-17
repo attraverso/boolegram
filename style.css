@@ -72,18 +72,18 @@ header .left:hover {
 .chatspace {
   width: 100%;
   height: calc(100% - 128px);
+  overflow-y: scroll;
+  display: none;
+}
+
+.chatspace.active {
+  display: block;
 }
 
 .chatspace .right-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.right-container {
-  width: 85%;
-  height: 100%;
-  margin: auto;
 }
 
 .clearfix::after {
@@ -115,16 +115,21 @@ header .left:hover {
   border-radius: 50%;
 }
 
-.compose-send {
-  text-transform: uppercase;
-}
-
 .contact {
-  padding: 7px 16px;
+  padding: 7px 12px;
 }
 
-.contact:hover {
+.contact.active {
+  background-color: #6490b1;
+  color: #fff;
+}
+
+.contact:not(.active):hover {
   background-color: #f2f6fa;
+}
+
+.contact-info-left {
+  width: 170px;
 }
 
 .contact-info-left,
@@ -138,6 +143,13 @@ header .left:hover {
 
 .contact-name {
   font-weight: 600;
+}
+
+.contact-name,
+.contact-preview {
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .contact-picture {
@@ -160,6 +172,7 @@ header .left:hover {
 .contacts {
   width: 100%;
   height: calc(100% - 58px);
+  overflow-y: scroll;
 }
 
 .dropdown-menu,
@@ -202,12 +215,12 @@ header .left:hover {
   width: 100%;
   margin: 5px 0;
   /* background-color: darkolivegreen; */
-  position: relative;
 }
 
 .message-content {
   width: 90%;
-  margin: 5px 0;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .message-picture {
@@ -223,13 +236,18 @@ header .left:hover {
 .message-select {
   width: 26px;
   height: 26px;
-  background-color: cornflowerblue;
+  background-color: #b2c9da;
   position: absolute;
   top: 7px;
-  left: -40px;
+  left: -100px;
   text-align: center;
   border-radius: 50%;
+  display: none;
 }
+
+/* .message-first {
+  top: -10px;
+} */
 
 .message-select i {
   color: #fff;
@@ -241,14 +259,21 @@ header .left:hover {
   font-size: 600;
 }
 
-.message-template {
-  display: none;
+.message-sender,
+.message-time {
+  height: 18px;
 }
 
 .right {
   height: 100%;
   width: 68%;
   /* background-color: blue; */
+}
+
+.right-container {
+  width: 85%;
+  height: 100%;
+  margin: auto;
 }
 
 .searchbar {
@@ -291,6 +316,16 @@ header .left:hover {
 
 .typebox {
   margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.typebox.active {
+  border-bottom: 3px solid #499dd9;
+}
+
+.typebox i {
+  margin-left: 10px;
 }
 
 .typebox textarea {
@@ -300,10 +335,8 @@ header .left:hover {
 }
 
 .typebox-options {
-  padding-top: 15px;
   display: flex;
   justify-content: space-between;
-  border-top: 3px solid green;
 }
 
 .typebox i,
@@ -318,9 +351,19 @@ header .left:hover {
   object-fit: contain;
 }
 
+.typebox-options span {
+  color: #499dd9;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 #container {
   height: 96vh;
   width: 65%;
   margin: auto;
   /* background-color: lightcoral; */
+}
+
+#template {
+  display: none;
 }
